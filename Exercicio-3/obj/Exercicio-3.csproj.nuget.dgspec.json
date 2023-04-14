@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45811737874\\Desktop\\Lista\\Exercicio-3\\Exercicio-3.csproj": {}
+    "C:\\Users\\45811737874\\Desktop\\exerciciosDaLista\\Exercicio-3\\Exercicio-3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45811737874\\Desktop\\Lista\\Exercicio-3\\Exercicio-3.csproj": {
+    "C:\\Users\\45811737874\\Desktop\\exerciciosDaLista\\Exercicio-3\\Exercicio-3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45811737874\\Desktop\\Lista\\Exercicio-3\\Exercicio-3.csproj",
+        "projectUniqueName": "C:\\Users\\45811737874\\Desktop\\exerciciosDaLista\\Exercicio-3\\Exercicio-3.csproj",
         "projectName": "Exercicio-3",
-        "projectPath": "C:\\Users\\45811737874\\Desktop\\Lista\\Exercicio-3\\Exercicio-3.csproj",
+        "projectPath": "C:\\Users\\45811737874\\Desktop\\exerciciosDaLista\\Exercicio-3\\Exercicio-3.csproj",
         "packagesPath": "C:\\Users\\45811737874\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45811737874\\Desktop\\Lista\\Exercicio-3\\obj\\",
+        "outputPath": "C:\\Users\\45811737874\\Desktop\\exerciciosDaLista\\Exercicio-3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\45811737874\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

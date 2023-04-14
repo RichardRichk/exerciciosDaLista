@@ -7,7 +7,6 @@
 // Dica: utilize if / else if / else
 
 
-
 static double CalcDesconto(double q, double pu)
 {
     if (q <= 5)
@@ -30,6 +29,7 @@ static double CalcDesconto(double q, double pu)
     }
 }
 
+string[] NuExcluidos = {"0","1","2","3","4","5","6","7","8","9"};
 
 string nome;
 
@@ -45,23 +45,18 @@ do
 {
 Console.WriteLine($"Qual o nome do produto ?");
 nome = (Console.ReadLine().Trim(' ').ToLower());
-} while (string.IsNullOrEmpty(nome) && string.IsNullOrWhiteSpace(nome));
+} while (string.IsNullOrEmpty(nome) && string.IsNullOrWhiteSpace(nome) && NuExcluidos.Contains(nome));
 
 Console.WriteLine($"");
 
-do
-{
 Console.WriteLine($"Qual o preco do produto ?");
 precoUnitario = double.Parse(Console.ReadLine().Trim(' '));
-} while (double.IsNullOrEmpty(precoUnitario) && double.IsNullOrWhiteSpace(precoUnitario));
+
 
 Console.WriteLine($"");
 
-do
-{
 Console.WriteLine($"Quantas unidades o cliente gostaria ?");
 quantidade = int.Parse(Console.ReadLine().Trim(' '));
-} while (string.IsNullOrEmpty(nome) && string.IsNullOrWhiteSpace(nome));
 
 desconto = CalcDesconto(quantidade, precoUnitario);
 
