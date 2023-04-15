@@ -6,6 +6,19 @@
 // - Se quantidade > 10 o desconto será de 5%
 // Dica: utilize if / else if / else
 
+using System.Text.RegularExpressions;
+
+static bool ValidacaoDeStringSemNumeros(string texto){
+    Regex regexSemNumeros = new Regex(@"\d"); // Expressão regular para encontrar dígitos (números)
+    if (regexSemNumeros.IsMatch(texto) || string.IsNullOrEmpty(texto) || string.IsNullOrWhiteSpace(texto)) { 
+        return true;
+    }
+    else
+    {
+        return false;
+            
+    }
+    }
 
 static double CalcDesconto(double q, double pu)
 {
@@ -41,17 +54,20 @@ double desconto;
 
 double precoFinal;
 
-do
-{
 Console.WriteLine($"Qual o nome do produto ?");
 nome = (Console.ReadLine().Trim(' ').ToLower());
-} while (string.IsNullOrEmpty(nome) && string.IsNullOrWhiteSpace(nome) && NuExcluidos.Contains(nome));
+while (ValidacaoDeStringSemNumeros(nome)){
+    Console.WriteLine($"O nome do produto não pode ser nulo ou conter numeros!\nDigite o nome do produto:");
+
+    Console.WriteLine($"");
+    
+    nome = (Console.ReadLine().Trim(' ').ToLower());
+}
 
 Console.WriteLine($"");
 
 Console.WriteLine($"Qual o preco do produto ?");
 precoUnitario = double.Parse(Console.ReadLine().Trim(' '));
-
 
 Console.WriteLine($"");
 
